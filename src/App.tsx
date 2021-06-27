@@ -1,6 +1,7 @@
 import { Home } from './pages/Home'
 import { NewRoom } from './pages/NewRoom'
 import { Room } from './pages/Room'
+import { AdminRoom } from './pages/AdminRoom'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom' 
 
@@ -14,6 +15,7 @@ function App() {
           <Route exact component={Home} path="/" />
           <Route component={NewRoom} path="/rooms/new" />
           <Route component={Room} path="/rooms/:id" />
+          <Route component={AdminRoom} path="/admin/rooms/:id" />
         </Switch>
       </AuthContextProvider>
     </BrowserRouter>
